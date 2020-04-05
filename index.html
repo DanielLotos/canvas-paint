@@ -1,7 +1,29 @@
 <html>
 <head>
   <style>
-  
+    body {
+      display: flex;
+      padding: 24px;
+      margin: 0;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    canvas {
+      margin: 0 auto;
+      border: 4px solid silver;
+    }
+
+    .settings {
+      display: flex;
+      padding: 12px 0;
+      margin: 0 0 24px;
+      flex-wrap: wrap;
+    }
+
+    .settings__wrapper:not(:first-of-type)  {
+      margin-left: 12px;
+    }
   </style>
 </head>
 <body>
