@@ -51,6 +51,9 @@ canvas.addEventListener('pointerdown', startDrawing);
 canvas.addEventListener('pointermove', draw);
 canvas.addEventListener('pointerup', stopDrawing);
 
-canvas.ontouchend = (e) => {
-    e.preventDefault();
-};
+document.body.addEventListener("touchstart", (e) => {
+  e.preventDefault();
+}, {
+  passive: false,
+  capture: false
+});
