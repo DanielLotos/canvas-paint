@@ -47,7 +47,7 @@ const draw = (e) => {
   }
 }
 
-canvas.addEventListener('pointerdown', startDrawing);
+canvas.addEventListener('pointerdown', startDrawing, {capture: true});
 canvas.addEventListener('pointermove', draw);
 canvas.addEventListener('pointerup', stopDrawing);
 
