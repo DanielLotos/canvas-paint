@@ -50,3 +50,7 @@ const draw = (e) => {
 canvas.addEventListener('pointerdown', startDrawing);
 canvas.addEventListener('pointermove', draw);
 canvas.addEventListener('pointerup', stopDrawing);
+
+canvas.ontouchend = (e) => {
+    e.preventDefault();
+};
